@@ -11,18 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticasKotlin">
+        <!-- Tu MainActivity actual -->
+        <!-- MainActivity pasa a ser una pantalla secundaria (sin intent-filter) -->
         <activity
             android:name=".ui.theme.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.PracticasKotlin"
-            android:windowSoftInputMode="adjustResize">
+            android:theme="@style/Theme.PracticasKotlin" />
+
+        <!-- Archivo se convierte en la pantalla principal que arranca la app -->
+        <activity
+            android:name=".Ejemplo1"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+    </application>
 </manifest>
