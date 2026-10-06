@@ -64,14 +64,6 @@ fun Texts(padding: PaddingValues) {
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        fontSize = 24.sp,
-        modifier = modifier
-    )
-}
 
 @Preview(showBackground = true)
 @Composable
