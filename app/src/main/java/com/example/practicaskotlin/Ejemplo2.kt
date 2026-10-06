@@ -24,8 +24,12 @@ class Ejemplo2 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        //Sirve para iniciar un Activity
         setContent {
+            //Sirve para agregar colores por defecto a lo de dentro
             FirstExampleTheme() {
+                //Sirve para dar un padding por defecto y agregarlo a texto
+                //e iniciarlo también.
                 Scaffold() {aña ->
                     Textito(aña)
                 }
