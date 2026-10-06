@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
@@ -41,6 +42,12 @@ class Ejemplo2 : ComponentActivity() {
 }
 //Hasta aquí. Lo demás son las UI(@) y eso hazlo como quieras.
 
+//Podemos crear un estilo y luego agregarlo al Texto.
+val miEstiloAzul = TextStyle(
+    fontSize = 40.sp,//Tamaño letra
+    color = Color.Blue, //Color letra
+    fontWeight = FontWeight.Bold, //Negrita
+)
 @Composable
 fun Textito(padding: PaddingValues) {
     Column(
@@ -60,6 +67,13 @@ fun Textito(padding: PaddingValues) {
             //Esto dos no hacen falta si ya centramos la columna
             textAlign = TextAlign.Center, //Centrar texto arriba
             modifier = Modifier.fillMaxWidth() //Ayuda para centrarlo
+            )
+
+        Text(
+            //Esto no hace falta si ya en el ui.theme agregamos
+            //las características de letras(en este caso noup).
+            text = "Prueba2",
+            style = miEstiloAzul
             )
     }
 }
