@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,14 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticasKotlin">
-        <!-- Tu MainActivity actual -->
-        <!-- MainActivity pasa a ser una pantalla secundaria (sin intent-filter) -->
+
+        <!-- MainActivity pasa a ser una pantalla secundaria (sin intent-filter de arranque) -->
         <activity
             android:name=".ui.theme.MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.PracticasKotlin" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
-        <!-- Archivo se convierte en la pantalla principal que arranca la app -->
+        <!-- Ejemplo1 se convierte en la pantalla principal que arranca la app -->
         <activity
             android:name=".Ejemplo1"
             android:exported="true">
@@ -28,5 +31,14 @@
             </intent-filter>
         </activity>
 
+        <!-- Ejemplo2 es otra pantalla secundaria de la app -->
+        <activity
+            android:name=".Ejemplo2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>
