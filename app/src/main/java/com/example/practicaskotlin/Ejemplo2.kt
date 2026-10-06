@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.sp
 import com.example.practicaskotlin.ui.theme.FirstExampleTheme
 
@@ -51,9 +52,15 @@ val miEstiloAzul = TextStyle(
 @Composable
 fun Textito(padding: PaddingValues) {
     Column(
-    verticalArrangement = Arrangement.SpaceEvenly,
-    horizontalAlignment = Alignment.CenterHorizontally,
-    modifier = Modifier.padding(padding).fillMaxWidth().fillMaxHeight()
+        verticalArrangement = Arrangement.SpaceEvenly,
+        horizontalAlignment = Alignment.CenterHorizontally,
+
+        // modifier: Permite aplicar modificaciones como
+        // tamaño, padding, o bordes a la columna.
+        modifier = Modifier
+            .padding(padding)
+            .fillMaxWidth()
+            .fillMaxHeight()
     ) {
         Text(
             //Esto no hace falta si ya en el ui.theme agregamos
@@ -75,5 +82,13 @@ fun Textito(padding: PaddingValues) {
             text = "Prueba2",
             style = miEstiloAzul
             )
+
+        Text(
+            text = "Este texto es muy largo o sea que no creo que quepa en una línea",
+            //Líneas que quieres que pueda tener el texto
+            maxLines = 3,
+            //Si el texto no cabe en la pantalla pues agregar "..." al final
+            overflow = TextOverflow.Ellipsis
+        )
     }
 }
