@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.ShortNavigationBarDefaults.arrangement
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -19,8 +18,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
 import com.example.practicaskotlin.ui.theme.FirstExampleTheme
 
+//Se escribe por defecto todo esto:
 class Ejemplo2 : ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -37,7 +36,7 @@ class Ejemplo2 : ComponentActivity() {
         }
     }
 }
-
+//Hasta aquí. Lo demás son las UI y eso hazlo como quieras.
 
 @Composable
 fun Textito(padding: PaddingValues) {
