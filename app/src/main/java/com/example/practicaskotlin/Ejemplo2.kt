@@ -49,10 +49,13 @@ fun Textito(padding: PaddingValues) {
     modifier = Modifier.padding(padding).fillMaxWidth().fillMaxHeight()
     ) {
         Text(
+            //Esto no hace falta si ya en el ui.theme agregamos
+            //las características de letras(en este caso noup).
             text = "Qué Pasha",
             fontSize = 24.sp,//Tamaño letra
             color = Color.Red, //Color letra
             fontWeight = FontWeight.Bold, //Negrita
+
 
             //Esto dos no hacen falta si ya centramos la columna
             textAlign = TextAlign.Center, //Centrar texto arriba
