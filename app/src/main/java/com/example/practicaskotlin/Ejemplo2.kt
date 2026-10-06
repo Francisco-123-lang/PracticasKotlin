@@ -15,6 +15,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import com.example.practicaskotlin.ui.theme.FirstExampleTheme
 
@@ -46,8 +49,14 @@ fun Textito(padding: PaddingValues) {
     modifier = Modifier.padding(padding).fillMaxWidth().fillMaxHeight()
     ) {
         Text(
-        text = "Qué Pasha",
-        fontSize = 24.sp
-        )
+            text = "Qué Pasha",
+            fontSize = 24.sp,//Tamaño letra
+            color = Color.Red, //Color letra
+            fontWeight = FontWeight.Bold, //Negrita
+
+            //Esto dos no hacen falta si ya centramos la columna
+            textAlign = TextAlign.Center, //Centrar texto arriba
+            modifier = Modifier.fillMaxWidth() //Ayuda para centrarlo
+            )
     }
 }
