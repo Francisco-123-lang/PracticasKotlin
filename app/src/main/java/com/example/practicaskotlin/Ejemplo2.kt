@@ -39,7 +39,7 @@ class Ejemplo2 : ComponentActivity() {
         }
     }
 }
-//Hasta aquí. Lo demás son las UI y eso hazlo como quieras.
+//Hasta aquí. Lo demás son las UI(@) y eso hazlo como quieras.
 
 @Composable
 fun Textito(padding: PaddingValues) {
