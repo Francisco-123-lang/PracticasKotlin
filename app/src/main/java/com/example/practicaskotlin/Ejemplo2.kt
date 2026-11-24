@@ -23,6 +23,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.sp
 import com.example.practicaskotlin.ui.theme.FirstExampleTheme
 
+//EJERCICIO EJEMPLO COLUMNA, COLORES Y TAMAÑOS
 //Se escribe por defecto todo esto:
 class Ejemplo2 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,7 +44,7 @@ class Ejemplo2 : ComponentActivity() {
 }
 //Hasta aquí. Lo demás son las UI(@) y eso hazlo como quieras.
 
-//Podemos crear un estilo y luego agregarlo al Texto.
+//Podemos crear un estilo y luego agregarlo al com.example.practicaskotlin.ui.theme.Texto.
 val miEstiloAzul = TextStyle(
     fontSize = 40.sp,//Tamaño letra
     color = Color.Blue, //Color letra

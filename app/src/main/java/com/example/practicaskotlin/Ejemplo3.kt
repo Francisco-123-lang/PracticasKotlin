@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.example.practicaskotlin.ui.theme.FirstExampleTheme
 
+//EJERCICIO EJEMPLO COLUMNAS
 
 //Se escribe por defecto todo esto:
 class Ejemplo3 : ComponentActivity() {

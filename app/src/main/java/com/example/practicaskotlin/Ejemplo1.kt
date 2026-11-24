@@ -19,6 +19,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.example.practicaskotlin.ui.theme.FirstExampleTheme
 
+
+// PRIMER VISTAZO
 class Ejemplo1 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +37,7 @@ class Ejemplo1 : ComponentActivity() {
 
 @Composable
 fun Texts(padding: PaddingValues) {
+
     Column(
         //Con ROW:
         //horizontalArrangement = Arrangement.Center,
@@ -53,7 +56,6 @@ fun Texts(padding: PaddingValues) {
             fontSize = 24.sp,
             //modifier = Modifier.fillMaxWidth()
         )
-
 
         Text(
             //textAlign = TextAlign.Center,
