@@ -31,7 +31,7 @@ import com.example.practicaskotlin.ui.theme.FirstExampleTheme
 
 
 //EJERCICIO DE LA TAREA 2 DE ROW Y COLUMNS
-class Ejemplo4 : ComponentActivity() {
+class Ejercicio2Tarea : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

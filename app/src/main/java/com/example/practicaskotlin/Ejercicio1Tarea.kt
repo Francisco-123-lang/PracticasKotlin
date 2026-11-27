@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.sp
 
 
 //EJERCICIO DE LA TAREA 1 DE ROWS Y COLUMNS
-class MainActivity : ComponentActivity() {
+class Ejercicio1Tarea : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
